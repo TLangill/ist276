@@ -1,0 +1,32 @@
+body {
+  background-color: darkorange;
+}
+
+ol {
+	text-align: center;
+	color: blue;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+section {
+	text-align: center;
+}
+
+h2 {
+	color: lightblue;
+	text-align: center;
+}
+
+footer {
+	font-size: 15px;
+	text-align: center;
+}
+
+
+
+
+
