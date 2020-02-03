@@ -1,0 +1,50 @@
+#myHeader	{
+	text-align: center;
+	font-size: 50px;
+}
+
+.colorclass {
+	background-color: cornflowerblue;	
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	color: darkseagreen;
+}
+
+h3 {
+	text-align: center;
+	color: darkorchid;
+}
+
+section {
+	text-align: center;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+
+details {
+	text-align: center;
+	color: white;
+}
+
+p {
+	text-align: center;
+}
+
+blockquote {
+	text-align: center;
+	font-family: monospace;
+}
+
+footer {
+	text-align: center;
+	font-size: 10px;
+}
+
+
+
