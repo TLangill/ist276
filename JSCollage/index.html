@@ -1,0 +1,51 @@
+<script>
+
+var numDisplay = prompt("How many pictures in the collage??");
+
+document.write("<u><center><br><heading style=\"font-size:75px; color: red;\"> Trevor Langill JavaScript Hobbies: Basketball, Writing, Cooking Moroccan Food </heading></center><br></u>");
+document.body.style.backgroundColor="pink";
+
+
+var i=0;
+var myPictures = ["bkt1.jpg", "bkt2.jpg", "bkt3.jpeg", "bkt4.jpg", "wrt1.jpg", "wrt2.jpg", "wrt3.jpeg",
+ "wrt4.jpeg", "cmf1.jpg", "cmf2.jpeg", "cmf3.jpeg", "cmf4.jpeg" ];	
+ 
+var myColors = ["BlueViolet", "CornflowerBlue", "DarkKhaki"];
+
+var myStyles = ["dotted", "outset", "double", "dashed", "solid"];
+
+
+function randVal(min,max)
+{
+	var numValue = (min + Math.floor(Math.random()*(max-min+1)));
+	
+	return numValue;
+}
+
+
+function createDiv()
+{
+	document.write("<br><div style = \" border-style:" 
+		+ myStyles[Math.floor(Math.random()*myStyles.length)] + "; border-color:" 
+		+ myColors[Math.floor(Math.random()*myColors.length)] 
+		+ "; border-width: " 
+		+ randVal(2, 35) 
+		+ "; top:"
+		 + randVal(150,1000)
+		 + "px; left:" 
+		  + randVal(150, 1000) 
+		  + "px; position: absolute; display: inline-block; \"><img src = \"" 
+		  + myPictures[Math.floor(Math.random()*myPictures.length)] 
+		  + "\"></div>");
+}
+
+
+
+for (i=0; i<numDisplay; i++)
+{ 
+	createDiv();
+}
+
+
+
+</script>
